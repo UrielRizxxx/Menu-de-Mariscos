@@ -1,0 +1,194 @@
+/* Estilos para los botones */
+/* Estilos para los botones del menú */
+.menu-btn {
+    position: relative; /* Posición relativa para alinear la barra */
+    background-color: transparent; /* Color de fondo transparente */
+    color: #ff6f61; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    font-family: 'Arial', sans-serif; /* Tipo de fuente */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: color 0.3s ease; /* Transición suave del color del texto */
+}
+
+.menu-btn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Altura de la barra */
+    background-color: #ff6f61; /* Color de la barra */
+    border-radius: 5px 5px 0 0; /* Bordes redondeados */
+    transform: scaleX(0); /* Inicialmente oculta la barra */
+    transition: transform 0.3s ease; /* Transición suave de la animación */
+}
+
+.menu-btn:hover::before {
+    transform: scaleX(1); /* Muestra la barra al pasar el mouse */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.menu-btn + .menu-btn {
+    margin-left: 10px; /* Espaciado entre botones */
+}
+
+
+/* Estilos para los botones cuando se les pasa el mouse */
+.menu-btn:hover {
+    background-color: #ffcb05; /* Amarillo */
+    color: #333; /* Negro */
+}
+
+/* Estilos para el contenedor de botones */
+.buttons-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Gris claro */
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff6f61; /* Rojo */
+    color: #fff; /* Blanco */
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h2 {
+    margin-top: 10px;
+    color: #333; /* Negro */
+}
+
+.menu-item .description {
+    color: #777; /* Gris oscuro */
+}
+
+.menu-item .price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff6f61; /* Rojo */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto */
+    padding: 40px 0; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+}
+
+.contact-info,
+.social-media {
+    margin-bottom: 20px; /* Espaciado entre secciones */
+}
+
+.social-media ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; /* Tamaño del texto */
+    transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+.social-media li a:hover {
+    color: #ff6f61; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para los logotipos de redes sociales */
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos horizontalmente */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.social-media ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; /* Tamaño del texto */
+    transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+.social-media li a:hover {
+    color: #ff6f61; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para los logotipos de redes sociales */
+.social-media-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px; /* Espaciado superior */
+}
+
+.social-media-logos img {
+    width: 40px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 0 30px; /* Espaciado entre logotipos */
+    vertical-align: middle; /* Centra verticalmente con respecto al texto */
+}
+
+/* Estilos para las imágenes de los platos */
+.menu-item img {
+    width: 300px; /* Ancho fijo */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Mantener la proporción y recortar si es necesario */
+    border-radius: 10px; /* Añade bordes redondeados */
+}
+
+
